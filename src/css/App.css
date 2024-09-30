@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('../../public/images/book-background4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+  margin-top: 100px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}

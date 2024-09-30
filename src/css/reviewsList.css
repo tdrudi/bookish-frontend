@@ -1,0 +1,48 @@
+.book-review-list {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.review-container {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.review {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review:hover {
+    background-color: rgba(240, 240, 240, 0.5);
+}
+
+.review p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.edit,
+.delete {
+    background-color: #5c9ded;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #4a8cce;
+}

@@ -1,0 +1,51 @@
+.book-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    padding: 10px;
+    transition: transform 0.2s;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    max-height: 700px;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.book-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book-info {
+    margin-top: 10px;
+}
+
+.book-title {
+    font-size: 1.2em;
+    color: #333;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.book-author {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
+}
+
+.book-rating {
+    font-size: 0.9em;
+    color: #333;
+    margin: 5px 0;
+}
+
+.book-rating p {
+    margin: 0;
+    font-size: 0.8em;
+    color: #888;
+}
