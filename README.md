@@ -1,30 +1,61 @@
 # Bookish -  Frontend
-## API URL: https://openlibrary.org/developers/api
+This repository is the client side application for Bookish, a full-stack web application developed as a bootcamp capstone project. Built with React, it provides an intuitive user interface for exploring books, managing personal reading lists, writing reviews, and interacting with the backend REST API. Reference API: https://openlibrary.org/developers/api
 
-## Technology Stack: 
-- Frontend: React.js, HTML, CSS, Axios for API calls Backend: Node.js, Express.js
-- Database: PSQL for storing user data, books, lists, and reviews
-- Authentication: JSON Web Tokens (JWT) Testing: Jest and React Testing Library
+## Tech Stack
+- Library: React.js
+- Routing: React Router
+- HTTP Client: Axios
+- State Management: React Context and Local Storage
+- Styling: CSS
+- Testing: Jest and React Testing Library
 
-## Description: 
-- I created a platform where users can search for books, write and read reviews, and create personalized lists of books. It aims to provide an engaging and user-friendly experience for book lovers to explore literature, share insights, and keep track of their reading goals.
+## Project Structure
+bookish-frontend/
+|--public/
+|--src/
+    |--components/
+    |   |--auth/        # Login, Register, and UserContext Components
+    |   |--Books/       # Book cataloging, details, search cards, and reviews
+    |   |--Lists/       # Reading list management and custom list views
+    |   |--Search/      # Book search pages, forms, and results display
+    |   |--Users/       # User profile and profile editing components
+    |--css/             # Stylesheets
+    |--App.js           # Root component and application layout
+    |--BookishAPI.js    # API for backend communication
+    |__Index.js         # Application entry point
 
-## Features Implemented
-- Book Search: Allows users to search for books. This feature is essential for helping users discover new books and find specific titles quickly.
-- Book Reviews: Users can write and read reviews. This fosters community engagement and helps users make informed reading choices based on others’ opinions.
-- Reading Lists: Users can create and manage lists. This feature enables users to organize their reading preferences and track their reading journeys.
-- User Profiles: Each user has a profile that displays their reviews, lists, and reading history. This personalizes the experience and encourages social interaction.
-- Rating System: Users can rate books on a scale (e.g., 1 to 5 stars). This provides a quick visual cue for book quality and popularity.
+## Getting Started
+Prerequisites: Bookish-backend repository running locally or deployed.
 
-## Tests
-- Tests are located alongside the files they are testing, in the same directory. This structure helps maintain clarity and organization, making it easier to find and modify tests as the codebase evolves.
+Installation
+1. Clone the respository:
+    git clone https://github.com/tdrudi/bookish-frontend.git
+    cd bookish-frontend
 
-To run the tests, navigate to the root of your project and execute the following command: npm test
+2. Install dependencies:
+    npm install
 
-## User Flow
-- Sign Up / Login: Users start by creating an account or logging in.
-- Search for Books: Users can enter search terms in the search bar to find books.
-- View Book Details: Clicking on a book displays detailed information, including reviews and ratings.
-- Write a Review: Users can write their own review and submit a rating for the book.
-- Create/Manage Lists: Users can create a new reading list or manage existing ones, adding books to their lists.
+3. Configure environment variables:
+    BASE_URL = http://localhost:3001
+
+4. Run the development server
+    npm start
+
+Open http://localhost:3001 to view in the browser.
+
+5. Running tests:
+    npm test
+
+## Core Features and User Flow
+- Authentication: Users can sign up for a new account or log in securely using JSON Web Token (JWT)
+- Book Discovery: Users can search for books, view detailed metadata, and read community reviews.
+- Reading Lists: Users can create, customize, and manage personal reading lists to track reading goals.
+- Reviews and Ratings: Users can rate books and write reviews to share insights with others.
+
+
+
+
+
+
+
 
