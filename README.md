@@ -10,7 +10,7 @@ This repository is the client side application for Bookish, a full-stack web app
 - Testing: Jest and React Testing Library
 
 ## Project Structure
-bookish-frontend/
+```bookish-frontend/
 |--public/
 |--src/
     |--components/
@@ -23,7 +23,7 @@ bookish-frontend/
     |--App.js           # Root component and application layout
     |--BookishAPI.js    # API for backend communication
     |__Index.js         # Application entry point
-
+```
 ## Getting Started
 Prerequisites: Bookish-backend repository running locally or deployed.
 
